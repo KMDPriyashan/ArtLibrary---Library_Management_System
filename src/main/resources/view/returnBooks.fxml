@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="543.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.returnBooksController">
+<AnchorPane prefHeight="543.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Books.ReturnBooks.returnBooksPageController">
    <children>
       <Label layoutX="194.0" layoutY="20.0" text="Return Book from Active member">
          <font>

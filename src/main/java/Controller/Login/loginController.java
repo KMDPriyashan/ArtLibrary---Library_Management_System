@@ -26,9 +26,8 @@ public class loginController {
             String DBusername = resultSet.getNString("username");
             String DBpassword = resultSet.getNString("password");
 
-            System.out.println(DBusername+ " "+ DBpassword);
             if (username.equals(DBusername) && password.equals(DBpassword)){
-                SceneManager.switchPage("/view/dashboard.fxml");
+                return true;
             }
         }
 

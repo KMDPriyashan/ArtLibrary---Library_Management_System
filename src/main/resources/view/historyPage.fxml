@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="465.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.historyPageController">
+<AnchorPane prefHeight="465.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.History.historyPageController">
    <children>
       <Label layoutX="195.0" layoutY="19.0" text="Master Review of the Barrowing Books">
          <font>
