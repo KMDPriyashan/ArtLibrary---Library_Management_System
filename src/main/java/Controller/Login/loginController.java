@@ -4,6 +4,7 @@ import db.DBConnection;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import scene.SceneManager;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -27,13 +28,7 @@ public class loginController {
 
             System.out.println(DBusername+ " "+ DBpassword);
             if (username.equals(DBusername) && password.equals(DBpassword)){
-                Stage stage = new Stage();
-                try {
-                    stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/dashboard.fxml"))));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-                stage.show();
+                SceneManager.switchPage("/view/dashboard.fxml");
             }
         }
 
