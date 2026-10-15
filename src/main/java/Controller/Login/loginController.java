@@ -13,7 +13,7 @@ import java.sql.SQLException;
 
 public class loginController {
 
-    Connection connection = DBConnection.getConnection();
+    Connection connection = DBConnection.getInstance().getConnection();
 
     public Boolean loginCredintialCheck(String username , String password) throws SQLException {
         String sql = "SELECT * FROM users";
