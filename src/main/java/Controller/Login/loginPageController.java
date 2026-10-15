@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import scene.SceneManager;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -24,7 +25,9 @@ public class loginPageController {
     }
 
     public void btnLoginOnAction(ActionEvent actionEvent) throws SQLException {
-        loginController.loginCredintialCheck(txtusername.getText(), txtpassword.getText());
+        if (loginController.loginCredintialCheck(txtusername.getText(),txtpassword.getText())){
+            SceneManager.switchPage("/view/dashboard.fxml");
+        }
 
     }
 

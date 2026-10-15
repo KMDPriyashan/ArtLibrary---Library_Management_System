@@ -13,7 +13,7 @@ public class starter extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         SceneManager.setStage(stage);
-        SceneManager.switchPage("/view/Welcome.fxml");
+        SceneManager.switchPage("/view/Login_page.fxml");
 
 
     }
