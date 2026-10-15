@@ -1,6 +1,7 @@
 package Controller.Books;
 
 import db.DBConnection;
+import scene.SceneManager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,6 +25,9 @@ public class addBookController {
             preparedStatement.setString(6,BookQty);
 
             int addBookQuaryResult = preparedStatement.executeUpdate();
+            if (addBookQuaryResult > 0){
+                SceneManager.switchPage("/view/SuccessNotification.fxml");
+            }
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
