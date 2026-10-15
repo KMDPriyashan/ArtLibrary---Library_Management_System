@@ -27,4 +27,8 @@ public class issueBookPageController {
     public void btnHistoryOnAction(ActionEvent actionEvent) {
         SceneManager.switchPage("/view/historyPage.fxml");
     }
+
+    public void btndashboardOnAction(ActionEvent actionEvent) {
+        SceneManager.switchPage("/view/dashboard.fxml");
+    }
 }

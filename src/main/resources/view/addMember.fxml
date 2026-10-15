@@ -106,6 +106,6 @@
       <Button fx:id="btnIssueBooks" layoutX="22.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnIssueBooksOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Issue books" />
       <Button fx:id="btnreturnBooks" layoutX="22.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnreturnBooksOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Return Books" />
       <Button fx:id="btnHistory" layoutX="22.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnHistoryOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Barrowing History" />
-      <Button layoutX="25.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #FFFDF6;" text="Dashboard" />
+      <Button fx:id="btndashboard" layoutX="25.0" layoutY="130.0" mnemonicParsing="false" onAction="#btndashboardOnAction" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #FFFDF6;" text="Dashboard" />
    </children>
 </AnchorPane>

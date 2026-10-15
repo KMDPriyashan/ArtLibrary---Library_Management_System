@@ -58,4 +58,8 @@ public class addBookPageController {
     public void btnPageAddBookOnAction(ActionEvent actionEvent) {
         addBookController.databaseSaveBookDetails(txtBookID.getText(), txtBookTitle.getText(), txtAuthorName.getText(), txtBookYear.getText(), txtbookCategory.getText(),txtBookQty.getText());
     }
+
+    public void btndashboardOnAction(ActionEvent actionEvent) {
+        SceneManager.switchPage("/view/dashboard.fxml");
+    }
 }
