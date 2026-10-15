@@ -59,7 +59,7 @@
             <Button fx:id="btnIssueBooks" layoutX="26.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnIssueBooksOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Issue books" />
             <Button fx:id="btnreturnBooks" layoutX="26.0" layoutY="310.0" mnemonicParsing="false" onAction="#btnreturnBooksOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Return Books" />
             <Button fx:id="btnHistory" layoutX="26.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnHistoryOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Barrowing History" />
-            <Button layoutX="29.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #FFFDF6;" text="Dashboard" />
+            <Button fx:id="btndashboard" layoutX="29.0" layoutY="120.0" mnemonicParsing="false" onAction="#btndashboardOnAction" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #FFFDF6;" text="Dashboard" />
          </children>
       </Pane>
       <Label layoutX="221.0" layoutY="20.0" text="Dashboard">
