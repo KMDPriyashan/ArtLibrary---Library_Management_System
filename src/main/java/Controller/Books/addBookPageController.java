@@ -46,6 +46,7 @@ public class addBookPageController {
     }
 
     public void btnbackHomeOnAction(ActionEvent actionEvent) {
+        SceneManager.switchPage("/view/dashboard.fxml");
     }
 
     public void btnAddBookFormClearOnAction(ActionEvent actionEvent) {
