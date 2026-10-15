@@ -6,8 +6,9 @@ import javafx.scene.control.TextField;
 import scene.SceneManager;
 
 public class addBookPageController {
+    public TextField txtBookID;
     public TextField txtBookTitle;
-    public TextField addAuthorName;
+    public TextField txtAuthorName;
     public TextField txtbookCategory;
     public TextField txtBookYear;
     public TextField txtBookQty;
@@ -20,6 +21,8 @@ public class addBookPageController {
     public Button btnIssueBooks;
     public Button btnreturnBooks;
     public Button btnHistory;
+
+    addBookController addBookController = new addBookController();
 
     public void btnAddBookOnAction(ActionEvent actionEvent) {
         SceneManager.switchPage("/view/addBook.fxml");
@@ -53,5 +56,6 @@ public class addBookPageController {
     }
 
     public void btnPageAddBookOnAction(ActionEvent actionEvent) {
+        addBookController.databaseSaveBookDetails(txtBookID.getText(), txtBookTitle.getText(), txtAuthorName.getText(), txtBookYear.getText(), txtbookCategory.getText(),txtBookQty.getText());
     }
 }
