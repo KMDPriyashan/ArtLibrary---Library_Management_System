@@ -5,45 +5,86 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/loginPage.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Login.loginPageController">
+<AnchorPane prefHeight="556.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Login.loginPageController">
    <children>
-      <Label alignment="CENTER" layoutX="93.0" layoutY="25.0" prefHeight="39.0" prefWidth="447.0" styleClass="main-title" stylesheets="@../CSS/loginPage.css" text="Library Management  System" textAlignment="CENTER" textFill="#2373f4">
+      <Label alignment="CENTER" layoutX="350.0" layoutY="94.0" prefHeight="39.0" prefWidth="447.0" styleClass="main-title" stylesheets="@../CSS/loginPage.css" text="Library Management  System" textAlignment="CENTER" textFill="#2373f4">
          <font>
             <Font name="System Bold" size="24.0" />
          </font></Label>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="69.0" prefHeight="18.0" prefWidth="223.0" styleClass="sub-title" stylesheets="@../CSS/loginPage.css" text="iCET Library Management system">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="407.0" layoutY="138.0" prefHeight="19.0" prefWidth="274.0" styleClass="sub-title" stylesheets="@../CSS/loginPage.css" text="iCET Library Management system">
          <font>
-            <Font name="System Italic" size="12.0" />
+            <Font name="System Italic" size="8.0" />
          </font></Label>
-      <Button fx:id="btnreset" layoutX="103.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnResetOnAction" prefHeight="42.0" prefWidth="102.0" style="-fx-background-color: #FF0000;" styleClass="btn-reset" stylesheets="@../CSS/loginPage.css" text="reset" textFill="WHITE" />
-      <Button fx:id="btnlogin" layoutX="346.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: #2373F4;" styleClass="btn-login" stylesheets="@../CSS/loginPage.css" text="Login To the system" textFill="WHITE">
+      <Button fx:id="btnreset" layoutX="360.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnResetOnAction" prefHeight="42.0" prefWidth="102.0" style="-fx-background-color: #FF0000;" styleClass="btn-reset" stylesheets="@../CSS/loginPage.css" text="reset" textFill="WHITE" />
+      <Button fx:id="btnlogin" layoutX="508.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: #2373F4;" styleClass="btn-login" stylesheets="@../CSS/loginPage.css" text="Login To the system" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Label layoutX="103.0" layoutY="120.0" prefHeight="18.0" prefWidth="85.0" styleClass="field-label" stylesheets="@../CSS/loginPage.css" text="Username">
+      <Label layoutX="360.0" layoutY="189.0" prefHeight="18.0" prefWidth="85.0" styleClass="field-label" stylesheets="@../CSS/loginPage.css" text="Username">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <Label layoutX="103.0" layoutY="207.0" prefHeight="18.0" prefWidth="86.0" styleClass="field-label" stylesheets="@../CSS/loginPage.css" text="Password">
+      <Label layoutX="360.0" layoutY="276.0" prefHeight="18.0" prefWidth="86.0" styleClass="field-label" stylesheets="@../CSS/loginPage.css" text="Password">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <Label layoutX="224.0" layoutY="362.0" text="Default Credontials - Admin123 pw - 1234">
+      <Label layoutX="360.0" layoutY="444.0" text="Default Credontials - Admin123 pw - 1234">
          <font>
             <Font name="System Italic" size="8.0" />
          </font>
       </Label>
-      <TextField fx:id="txtusername" layoutX="103.0" layoutY="146.0" prefHeight="35.0" prefWidth="390.0" promptText="Enter Your Name" stylesheets="@../CSS/loginPage.css">
+      <TextField fx:id="txtusername" layoutX="360.0" layoutY="215.0" prefHeight="35.0" prefWidth="390.0" promptText="Enter Your Name" stylesheets="@../CSS/loginPage.css">
          <styleClass>
             <String fx:value="input-field" />
             <String fx:value=".btn-reset:hover" />
          </styleClass></TextField>
-      <TextField fx:id="txtpassword" layoutX="103.0" layoutY="239.0" prefHeight="35.0" prefWidth="390.0" promptText="Enter Your Password" stylesheets="@../CSS/loginPage.css">
+      <TextField fx:id="txtpassword" layoutX="360.0" layoutY="308.0" prefHeight="35.0" prefWidth="390.0" promptText="Enter Your Password" stylesheets="@../CSS/loginPage.css">
          <styleClass>
             <String fx:value="input-field" />
             <String fx:value=".btn-reset:hover" />
          </styleClass></TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="556.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="291.0" />
+      <Label layoutX="66.0" layoutY="24.0" text="ArtLibrary" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="75.0" text="iCET student Mnagement system" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#feffff" height="42.0" layoutX="14.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="36.0" />
+      <Label layoutX="30.0" layoutY="492.0" text="Develper sourses" textFill="WHITE">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="507.0" text="KMDeveloper" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#feffff" height="22.0" layoutX="249.0" layoutY="496.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="21.0" />
+      <Label layoutX="31.0" layoutY="249.0" text="Empowering Knowledge" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="285.0" text="One Book at a Time" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="177.0" text="&quot;A library is not a luxurybut" textFill="WHITE" />
+      <Label layoutX="100.0" layoutY="197.0" text="one of the necessities of life.&quot;" textFill="WHITE" />
+      <Label layoutX="210.0" layoutY="319.0" text="Mrs. Williams" textFill="WHITE">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

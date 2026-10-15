@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="463.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Books.IssueBook.issueBookPageController">
    <children>
       <Label layoutX="194.0" layoutY="17.0" text="Issue Books">
@@ -47,37 +46,6 @@
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#feffff" height="18.0" layoutX="28.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
       <Line endX="34.79998779296875" endY="-1.52587890625E-5" layoutX="125.0" layoutY="107.0" startX="-100.0" stroke="#efefef" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="19.0" layoutY="251.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="136.0" />
-      <Label alignment="CENTER" layoutX="26.0" layoutY="194.0" text="Add Member" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="25.0" layoutY="224.0" text="Manage Member" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="52.0" layoutY="256.0" text="Issue Book">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="25.0" layoutY="284.0" text="Return Book" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="28.0" layoutY="129.0" text="Dashboard" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="25.0" layoutY="313.0" text="Borrowing History" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
       <Label layoutX="27.0" layoutY="412.0" text="Develper sourses" textFill="WHITE">
          <font>
             <Font size="8.0" />
@@ -89,11 +57,6 @@
          </font>
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#feffff" height="18.0" layoutX="119.0" layoutY="425.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
-      <Label layoutX="27.0" layoutY="161.0" text="Add Books" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1f" height="340.0" layoutX="194.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="552.0" />
       <TextField layoutX="254.0" layoutY="193.0" prefHeight="38.0" prefWidth="452.0" />
       <Label layoutX="210.0" layoutY="104.0" text="Issue books details">
@@ -132,5 +95,12 @@
       <Button layoutX="210.0" layoutY="388.0" mnemonicParsing="false" style="-fx-background-color: #8ECA3C;" text="Back to Home" textFill="WHITE" />
       <DatePicker layoutX="253.0" layoutY="329.0" prefHeight="38.0" prefWidth="175.0" />
       <DatePicker layoutX="518.0" layoutY="328.0" prefHeight="38.0" prefWidth="188.0" />
+      <Button fx:id="btnAddBook" layoutX="19.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Add Books" />
+      <Button fx:id="btnAddmembers" layoutX="19.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnAddmemberOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Add Member" />
+      <Button fx:id="btnManageMember" layoutX="14.0" layoutY="245.0" mnemonicParsing="false" onAction="#btnManageMemberOnAction" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #FFFDF6;" text="View / Manage Member" />
+      <Button fx:id="btnIssueBooks" layoutX="20.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnIssueBooksOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Issue books" />
+      <Button fx:id="btnreturnBooks" layoutX="20.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnreturnBooksOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Return Books" />
+      <Button fx:id="btnHistory" layoutX="20.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnHistoryOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Barrowing History" />
+      <Button layoutX="23.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #FFFDF6;" text="Dashboard" />
    </children>
 </AnchorPane>
