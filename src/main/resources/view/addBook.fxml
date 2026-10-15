@@ -57,7 +57,7 @@
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#feffff" height="18.0" layoutX="121.0" layoutY="430.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1f" height="340.0" layoutX="196.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="577.0" />
-      <TextField layoutX="256.0" layoutY="198.0" prefHeight="38.0" prefWidth="191.0" />
+      <TextField fx:id="txtBookID" layoutX="256.0" layoutY="198.0" prefHeight="38.0" prefWidth="191.0" promptText="Add Book ID" />
       <Label layoutX="212.0" layoutY="109.0" text="Book Details Entry">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -68,13 +68,13 @@
             <Font size="10.0" />
          </font>
       </Label>
-      <TextField layoutX="517.0" layoutY="198.0" prefHeight="38.0" prefWidth="191.0" />
-      <TextField layoutX="257.0" layoutY="265.0" prefHeight="38.0" prefWidth="191.0" />
-      <TextField layoutX="517.0" layoutY="265.0" prefHeight="38.0" prefWidth="191.0" />
-      <TextField layoutX="257.0" layoutY="333.0" prefHeight="38.0" prefWidth="191.0" />
-      <TextField layoutX="518.0" layoutY="333.0" prefHeight="38.0" prefWidth="191.0" />
-      <Button layoutX="544.0" layoutY="392.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #FF0000;" text="Clear Form" textFill="WHITE" />
-      <Button layoutX="644.0" layoutY="392.0" mnemonicParsing="false" style="-fx-background-color: #2373F4;" text="Add Books" textFill="WHITE" />
+      <TextField fx:id="txtBookTitle" layoutX="517.0" layoutY="198.0" prefHeight="38.0" prefWidth="191.0" promptText="Add Book title" />
+      <TextField fx:id="addAuthorName" layoutX="257.0" layoutY="265.0" prefHeight="38.0" prefWidth="191.0" promptText="Add Author name" />
+      <TextField fx:id="txtbookCategory" layoutX="517.0" layoutY="265.0" prefHeight="38.0" prefWidth="191.0" promptText="Add category related that book" />
+      <TextField fx:id="txtBookYear" layoutX="257.0" layoutY="333.0" prefHeight="38.0" prefWidth="191.0" promptText="Add Book Publisher Year" />
+      <TextField fx:id="txtBookQty" layoutX="518.0" layoutY="333.0" prefHeight="38.0" prefWidth="191.0" promptText="Add available Quentity" />
+      <Button fx:id="btnClear" layoutX="544.0" layoutY="392.0" mnemonicParsing="false" onAction="#btnAddBookFormClearOnAction" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #FF0000;" text="Clear Form" textFill="WHITE" />
+      <Button fx:id="btnaddBook" layoutX="644.0" layoutY="392.0" mnemonicParsing="false" onAction="#btnPageAddBookOnAction" style="-fx-background-color: #2373F4;" text="Add Books" textFill="WHITE" />
       <Label layoutX="268.0" layoutY="176.0" text="Book ID">
          <font>
             <Font name="System Bold" size="10.0" />
@@ -99,7 +99,7 @@
          <font>
             <Font name="System Bold" size="10.0" />
          </font></Label>
-      <Button layoutX="212.0" layoutY="393.0" mnemonicParsing="false" style="-fx-background-color: #8ECA3C;" text="Back to Home" textFill="WHITE" />
+      <Button fx:id="btnbackHome" layoutX="212.0" layoutY="393.0" mnemonicParsing="false" onAction="#btnbackHomeOnAction" style="-fx-background-color: #8ECA3C;" text="Back to Home" textFill="WHITE" />
       <Button fx:id="btnAddBook" layoutX="20.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Add Books" />
       <Button fx:id="btnAddmembers" layoutX="20.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnAddmemberOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Add Member" />
       <Button fx:id="btnManageMember" layoutX="15.0" layoutY="245.0" mnemonicParsing="false" onAction="#btnManageMemberOnAction" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #FFFDF6;" text="View / Manage Member" />
