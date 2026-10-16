@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Notification.FailedNotification.AddIssueBookFailedNotification">
+   <children>
+      <Button fx:id="btnFailed" layoutX="257.0" layoutY="277.0" mnemonicParsing="false" onAction="#btnFailedOnAction" prefHeight="34.0" prefWidth="126.0" style="-fx-background-color: #f01e2c;" text="Ok" textFill="WHITE" />
+      <Label layoutX="193.0" layoutY="177.0" text="Failed Update !">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="71.0" text="ArtLibrary" textFill="DODGERBLUE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="122.0" text="iCET student Mnagement system" textFill="DODGERBLUE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="34.0" layoutX="203.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="36.0" />
+      <Label layoutX="132.0" layoutY="232.0" text="Failed execute the Add issue books In datanase using Quary Execution " />
+   </children>
+</AnchorPane>

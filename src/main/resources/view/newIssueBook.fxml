@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="464.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Books.IssueBook.issueBookPageController">
    <children>
       <Circle fill="#1fff40" layoutX="684.0" layoutY="45.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" />
@@ -76,18 +75,18 @@
             <Font size="10.0" />
          </font>
       </Label>
-      <Button layoutX="500.0" layoutY="389.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="211.0" style="-fx-background-color: #2373F4;" text="Issue Books" textFill="WHITE" />
-      <Label layoutX="261.0" layoutY="173.0" text="Select Member ">
+      <Button fx:id="btnIssueBook" layoutX="500.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnSubmitIssueBookOnAction" prefHeight="30.0" prefWidth="211.0" style="-fx-background-color: #2373F4;" text="Issue Books" textFill="WHITE" />
+      <Label layoutX="370.0" layoutY="173.0" text="Select Member ">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
       </Label>
-      <Label layoutX="260.0" layoutY="242.0" text="Select Book">
+      <Label layoutX="239.0" layoutY="242.0" text="Select Book">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
       </Label>
-      <Label layoutX="260.0" layoutY="311.0" text="Issue date">
+      <Label layoutX="239.0" layoutY="311.0" text="Issue date">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -98,9 +97,15 @@
          </font>
       </Label>
       <Button layoutX="205.0" layoutY="390.0" mnemonicParsing="false" style="-fx-background-color: #8ECA3C;" text="Back to Home" textFill="WHITE" />
-      <DatePicker layoutX="248.0" layoutY="331.0" prefHeight="38.0" prefWidth="175.0" />
-      <DatePicker layoutX="513.0" layoutY="330.0" prefHeight="38.0" prefWidth="190.0" />
-      <TextField layoutX="248.0" layoutY="193.0" prefHeight="38.0" prefWidth="454.0" />
-      <TextField layoutX="248.0" layoutY="262.0" prefHeight="38.0" prefWidth="454.0" />
+      <DatePicker fx:id="dateIssueBook" layoutX="219.0" layoutY="331.0" prefHeight="38.0" prefWidth="175.0" promptText="Select the Issue Date" />
+      <DatePicker fx:id="dateDueDate" layoutX="513.0" layoutY="330.0" prefHeight="38.0" prefWidth="190.0" promptText="Select the Due Date" />
+      <TextField fx:id="txtBarrowingMember" layoutX="354.0" layoutY="193.0" prefHeight="38.0" prefWidth="346.0" promptText="Select the member for Barrowing Books ( M001-Nimal Perera )" />
+      <TextField fx:id="txtBarrowingBook" layoutX="218.0" layoutY="262.0" prefHeight="38.0" prefWidth="485.0" promptText="Select the Book For the Barrowing ( B0022 - The story )" />
+      <TextField fx:id="txtBarrowingID" layoutX="218.0" layoutY="193.0" prefHeight="38.0" prefWidth="130.0" promptText="IssueMB001-001" />
+      <Label layoutX="225.0" layoutY="172.0" text="Barrowing ID">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

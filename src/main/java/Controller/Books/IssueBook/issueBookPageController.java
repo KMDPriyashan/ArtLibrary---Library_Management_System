@@ -1,9 +1,22 @@
 package Controller.Books.IssueBook;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import scene.SceneManager;
 
 public class issueBookPageController {
+
+
+    issueBookController issueBookController = new issueBookController();
+    public TextField txtBarrowingID;
+    public Button btnIssueBook;
+    public DatePicker dateIssueBook;
+    public DatePicker dateDueDate;
+    public TextField txtBarrowingMember;
+    public TextField txtBarrowingBook;
+
     public void btnAddBookOnAction(ActionEvent actionEvent) {
         SceneManager.switchPage("/view/addBook.fxml");
     }
@@ -30,5 +43,9 @@ public class issueBookPageController {
 
     public void btndashboardOnAction(ActionEvent actionEvent) {
         SceneManager.switchPage("/view/dashboard.fxml");
+    }
+
+    public void btnSubmitIssueBookOnAction(ActionEvent actionEvent) {
+        issueBookController.databaseSaveIssueBookDetails(txtBarrowingID.getText(),txtBarrowingBook.getText(),txtBarrowingMember.getText(),dateDueDate.getValue().toString(),dateIssueBook.getValue().toString());
     }
 }

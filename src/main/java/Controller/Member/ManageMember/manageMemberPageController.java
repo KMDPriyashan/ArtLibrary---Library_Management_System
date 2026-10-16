@@ -1,4 +1,4 @@
-package Controller.Member.ManageMmber;
+package Controller.Member.ManageMember;
 
 import Model.Member;
 import javafx.collections.FXCollections;
@@ -21,7 +21,7 @@ public class manageMemberPageController implements Initializable {
     public TableColumn clmMemberAddress;
     public TableView MemberTable;
 
-    static ObservableList<Member> MemberList = FXCollections.observableArrayList();
+    public static ObservableList<Member> MemberList = FXCollections.observableArrayList();
 
     public void btnAddBookOnAction(ActionEvent actionEvent) {
         SceneManager.switchPage("/view/addBook.fxml");

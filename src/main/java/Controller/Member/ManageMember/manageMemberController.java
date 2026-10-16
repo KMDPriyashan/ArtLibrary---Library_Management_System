@@ -1,4 +1,4 @@
-package Controller.Member.ManageMmber;
+package Controller.Member.ManageMember;
 
 import Model.Member;
 import db.DBConnection;
@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import static Controller.Member.ManageMmber.manageMemberPageController.MemberList;
+import static Controller.Member.ManageMember.manageMemberPageController.MemberList;
 
 public class manageMemberController {
 
@@ -42,8 +42,4 @@ public class manageMemberController {
         }
     }
 
-//    public void setToMemberDataOnTable(String memberID, String memberName, String memberemail, String memberPhoneNumber, String memberAddress){
-//        //table ekata data add vena eka hadanna one methana
-//
-//    }
 }
