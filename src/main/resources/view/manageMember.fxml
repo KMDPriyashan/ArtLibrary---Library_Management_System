@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="460.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Member.ManageMmber.manageMemberPageController">
    <children>
-      <Label layoutX="194.0" layoutY="19.0" text="View / Manage the Mmbers ">
+      <Label layoutX="194.0" layoutY="19.0" text="View / Manage the Members ">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -60,11 +60,14 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#feffff" height="18.0" layoutX="119.0" layoutY="427.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="349.0" layoutX="194.0" layoutY="89.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="577.0" />
       <TextField layoutX="216.0" layoutY="110.0" prefHeight="30.0" prefWidth="405.0" promptText="Search Member by name , ID..." />
-      <Button layoutX="645.0" layoutY="111.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #2373F4;" text="+ Add Member" textFill="WHITE" />
-      <TableView layoutX="216.0" layoutY="164.0" prefHeight="250.0" prefWidth="535.0">
+      <Button layoutX="645.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnAddmemberOnAction" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #2373F4;" text="+ Add Member" textFill="WHITE" />
+      <TableView fx:id="MemberTable" layoutX="216.0" layoutY="164.0" prefHeight="250.0" prefWidth="535.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="clmMemberID" prefWidth="77.60005187988281" text="Member ID" />
+          <TableColumn fx:id="clmMemberName" prefWidth="124.0" text="Member name" />
+            <TableColumn fx:id="clmMemberEmail" prefWidth="109.5999755859375" text="Email" />
+            <TableColumn fx:id="clmMemberPhoneNumber" prefWidth="112.79998779296875" text="Phone Number" />
+            <TableColumn fx:id="clmMemberAddress" prefWidth="108.800048828125" text="Address" />
         </columns>
       </TableView>
       <Button fx:id="btnAddBook" layoutX="19.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Add Books" />
