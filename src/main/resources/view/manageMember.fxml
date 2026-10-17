@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="460.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Member.ManageMmber.manageMemberPageController">
+<AnchorPane prefHeight="460.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Member.ManageMember.manageMemberPageController">
    <children>
       <Label layoutX="194.0" layoutY="19.0" text="View / Manage the Members ">
          <font>

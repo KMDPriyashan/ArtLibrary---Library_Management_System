@@ -1,4 +1,4 @@
-package Controller.Member.ManageMmber;
+package Controller.Member.ManageMember;
 
 import Model.Member;
 import javafx.collections.FXCollections;
