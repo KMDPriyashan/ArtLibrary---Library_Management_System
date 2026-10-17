@@ -8,8 +8,9 @@ import scene.SceneManager;
 
 public class issueBookPageController {
 
-    issueBookController issueBookController = new issueBookController();
 
+    issueBookController issueBookController = new issueBookController();
+    public TextField txtBarrowingID;
     public Button btnIssueBook;
     public DatePicker dateIssueBook;
     public DatePicker dateDueDate;
@@ -45,6 +46,6 @@ public class issueBookPageController {
     }
 
     public void btnSubmitIssueBookOnAction(ActionEvent actionEvent) {
-        issueBookController.databaseSaveIssueBookDetails(txtBarrowingBook.getText(),txtBarrowingMember.getText(),dateDueDate.getValue().toString(),dateIssueBook.getValue().toString());
+        issueBookController.databaseSaveIssueBookDetails(txtBarrowingID.getText(),txtBarrowingBook.getText(),txtBarrowingMember.getText(),dateDueDate.getValue().toString(),dateIssueBook.getValue().toString());
     }
 }

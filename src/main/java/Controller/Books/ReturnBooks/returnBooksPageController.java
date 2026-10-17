@@ -17,7 +17,7 @@ public class returnBooksPageController {
     }
 
     public void btnIssueBooksOnAction(ActionEvent actionEvent) {
-        SceneManager.switchPage("/view/newIssueBook.fxml");
+        SceneManager.switchPage("/view/issueBook.fxml");
     }
 
     public void btnreturnBooksOnAction(ActionEvent actionEvent) {
