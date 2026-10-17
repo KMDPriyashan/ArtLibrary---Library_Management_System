@@ -26,7 +26,7 @@ public class addBookController {
 
             int addBookQuaryResult = preparedStatement.executeUpdate();
             if (addBookQuaryResult > 0){
-                SceneManager.switchPage("/view/SuccessNotification.fxml");
+                SceneManager.switchPage("/view/Notification/SuccessfulNotification/AddBookSuccessNotification.fxml");
             }
 
         } catch (SQLException e) {

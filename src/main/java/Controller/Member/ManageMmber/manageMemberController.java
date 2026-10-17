@@ -42,8 +42,4 @@ public class manageMemberController {
         }
     }
 
-//    public void setToMemberDataOnTable(String memberID, String memberName, String memberemail, String memberPhoneNumber, String memberAddress){
-//        //table ekata data add vena eka hadanna one methana
-//
-//    }
 }

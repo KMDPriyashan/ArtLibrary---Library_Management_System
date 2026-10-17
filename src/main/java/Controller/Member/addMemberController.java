@@ -23,7 +23,7 @@ public class addMemberController {
 
             int addMemberQuaryResult = preparedStatement.executeUpdate();
             if (addMemberQuaryResult > 0){
-                SceneManager.switchPage("/view/SuccessNotification.fxml");
+                SceneManager.switchPage("/view/Notification/SuccessfulNotification/AddMemberSuccessNotification.fxml");
             }
 
         } catch (SQLException e) {
