@@ -8,6 +8,9 @@ import javafx.scene.control.TextField;
 import scene.SceneManager;
 
 public class returnBooksPageController {
+
+    returnBookController returnBookController = new returnBookController();
+    public TextField txtfineAmount;
     public Button btnConformReturnBook;
     public Button btnissueBookSearch;
     public TextField txtIssueID;
@@ -17,7 +20,6 @@ public class returnBooksPageController {
     public Label lblissueBookDate;
     public DatePicker dataOfReturn;
 
-    returnBookController returnBookController = new returnBookController();
 
     public void btnAddBookOnAction(ActionEvent actionEvent) {
         SceneManager.switchPage("/view/addBook.fxml");
@@ -52,26 +54,26 @@ public class returnBooksPageController {
     }
 
     public void btnConformReturnBookOnAction(ActionEvent actionEvent) {
-        returnBookController.databaseSaveReturnBooksDetails(dataOfReturn.getValue());
+        returnBookController.databaseSaveReturnBooksDetails(txtIssueID.getText(),dataOfReturn.getValue().toString(),txtfineAmount.getText());
     }
 
     public void btnissueBookSearchOnAction(ActionEvent actionEvent) {
-        returnBookController.loadIssueBookDetailsByID(txtIssueID.getText());
+        returnBookController.loadIssueBookDetailsByID(txtIssueID.getText(),this);
     }
 
-    public void setBarrowBook(String BarrowBook) {
-        lblBarrowBook.setText(BarrowBook);
+    public void setBarrowBook(String value) {
+        lblBarrowBook.setText(value);
     }
 
-    public void setBarrowMember(String BarrowMember) {
-        lblBarrowBook.setText(BarrowMember);
+    public void setBarrowMember(String value) {
+        lblBarrowMember.setText(value);
     }
 
-    public void setBarrowBookdate(String issueDate) {
-        lblBarrowBook.setText(issueDate);
+    public void setBarrowBookdate(String value) {
+        lblBarrowBookDate.setText(value);
     }
-    public void setissueBookdate(String dueDate) {
-        lblBarrowBook.setText(dueDate);
+    public void setissueBookdate(String value) {
+        lblissueBookDate.setText(value);
     }
 
 

@@ -111,6 +111,6 @@
       <Button fx:id="btndashboard" layoutX="23.0" layoutY="130.0" mnemonicParsing="false" onAction="#btndashboardOnAction" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #FFFDF6;" text="Dashboard" />
       <Button fx:id="btnissueBookSearch" layoutX="616.0" layoutY="193.0" mnemonicParsing="false" onAction="#btnissueBookSearchOnAction" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: #000000;" text="Search" textFill="WHITE" />
       <Label layoutX="559.0" layoutY="388.0" text="Fine Amount" />
-      <TextField fx:id="txtineAmount" layoutX="510.0" layoutY="411.0" prefHeight="38.0" prefWidth="184.0" promptText="Enter the fine Amount" />
+      <TextField fx:id="txtfineAmount" layoutX="510.0" layoutY="411.0" prefHeight="38.0" prefWidth="184.0" promptText="Enter the fine Amount" />
    </children>
 </AnchorPane>
