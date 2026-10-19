@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="543.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Books.ReturnBooks.returnBooksPageController">
+<AnchorPane prefHeight="558.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Books.ReturnBooks.returnBooksPageController">
    <children>
       <Label layoutX="194.0" layoutY="20.0" text="Return Book from Active member">
          <font>
@@ -57,8 +57,8 @@
          </font>
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#feffff" height="18.0" layoutX="119.0" layoutY="519.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1f" height="423.0" layoutX="194.0" layoutY="96.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="553.0" />
-      <TextField fx:id="txtIssueID" layoutX="254.0" layoutY="190.0" prefHeight="38.0" prefWidth="347.0" promptText="enter the issue transaction" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1f" height="423.0" layoutX="194.0" layoutY="96.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="630.0" />
+      <TextField fx:id="txtIssueID" layoutX="298.0" layoutY="190.0" prefHeight="38.0" prefWidth="347.0" promptText="enter the issue transaction" />
       <Label layoutX="210.0" layoutY="107.0" text="Return Books Processing">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -69,8 +69,8 @@
             <Font size="10.0" />
          </font>
       </Label>
-      <Button fx:id="btnConformReturnBook" layoutX="579.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnConformReturnBookOnAction" style="-fx-background-color: #2373F4;" text="Conform Book Return" textFill="WHITE" />
-      <Label layoutX="266.0" layoutY="168.0" text="IssueID">
+      <Button fx:id="btnConformReturnBook" layoutX="641.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnConformReturnBookOnAction" style="-fx-background-color: #2373F4;" text="Conform Book Return" textFill="WHITE" />
+      <Label layoutX="299.0" layoutY="168.0" text="IssueID">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -80,8 +80,8 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Label>
-      <Button fx:id="btnHome" layoutX="227.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnHomeOnAction" style="-fx-background-color: #8ECA3C;" text="Back to Home" textFill="WHITE" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="134.0" layoutX="256.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="438.0" />
+      <Button fx:id="btnHome" layoutX="254.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnHomeOnAction" style="-fx-background-color: #8ECA3C;" text="Back to Home" textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="134.0" layoutX="256.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="523.0" />
       <Label layoutX="271.0" layoutY="255.0" text="Member" textFill="WHITE" />
       <DatePicker fx:id="dataOfReturn" layoutX="259.0" layoutY="412.0" prefHeight="38.0" prefWidth="195.0" promptText="Enter the return Date" />
       <Label layoutX="271.0" layoutY="295.0" text="Barrow Date" textFill="WHITE" />
@@ -92,12 +92,12 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="lblBarrowMember" layoutX="592.0" layoutY="255.0" text="Nimali Fanando" textFill="WHITE" />
-      <Label fx:id="lblBarrowBook" layoutX="588.0" layoutY="276.0" text="History Available" textFill="WHITE" />
-      <Label fx:id="lblBarrowBookDate" layoutX="616.0" layoutY="298.0" text="2026/10/06" textFill="WHITE" />
-      <Label fx:id="lblissueBookDate" layoutX="616.0" layoutY="319.0" text="2026/10/18" textFill="WHITE" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15ff28" height="28.0" layoutX="573.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" />
-      <Label layoutX="585.0" layoutY="346.0" text="Pending Status" textFill="WHITE">
+      <Label fx:id="lblBarrowMember" layoutX="620.0" layoutY="255.0" text="Nimali Fanando" textFill="WHITE" />
+      <Label fx:id="lblBarrowBook" layoutX="615.0" layoutY="276.0" text="History Available" textFill="WHITE" />
+      <Label fx:id="lblBarrowBookDate" layoutX="628.0" layoutY="298.0" text="2026/10/06" textFill="WHITE" />
+      <Label fx:id="lblissueBookDate" layoutX="627.0" layoutY="319.0" text="2026/10/18" textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15ff28" height="28.0" layoutX="608.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" />
+      <Label layoutX="616.0" layoutY="346.0" text="Pending Status" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -109,8 +109,8 @@
       <Button fx:id="btnreturnBooks" layoutX="20.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnreturnBooksOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Return Books" />
       <Button fx:id="btnHistory" layoutX="20.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnHistoryOnAction" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FFFDF6;" text="Barrowing History" />
       <Button fx:id="btndashboard" layoutX="23.0" layoutY="130.0" mnemonicParsing="false" onAction="#btndashboardOnAction" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #FFFDF6;" text="Dashboard" />
-      <Button fx:id="btnissueBookSearch" layoutX="616.0" layoutY="193.0" mnemonicParsing="false" onAction="#btnissueBookSearchOnAction" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: #000000;" text="Search" textFill="WHITE" />
-      <Label layoutX="559.0" layoutY="388.0" text="Fine Amount" />
-      <TextField fx:id="txtfineAmount" layoutX="510.0" layoutY="411.0" prefHeight="38.0" prefWidth="184.0" promptText="Enter the fine Amount" />
+      <Button fx:id="btnissueBookSearch" layoutX="660.0" layoutY="193.0" mnemonicParsing="false" onAction="#btnissueBookSearchOnAction" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: #000000;" text="Search" textFill="WHITE" />
+      <Label layoutX="642.0" layoutY="388.0" text="Fine Amount" />
+      <TextField fx:id="txtfineAmount" layoutX="593.0" layoutY="411.0" prefHeight="38.0" prefWidth="184.0" promptText="Enter the fine Amount" />
    </children>
 </AnchorPane>

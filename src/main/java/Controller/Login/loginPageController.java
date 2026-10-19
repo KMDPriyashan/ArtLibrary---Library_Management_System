@@ -27,6 +27,8 @@ public class loginPageController {
     public void btnLoginOnAction(ActionEvent actionEvent) throws SQLException {
         if (loginController.loginCredintialCheck(txtusername.getText(),txtpassword.getText())){
             SceneManager.switchPage("/view/dashboard.fxml");
+        }else {
+            SceneManager.switchPage("/view/FailedNotification/loginFailedNotification.fxml");
         }
 
     }
