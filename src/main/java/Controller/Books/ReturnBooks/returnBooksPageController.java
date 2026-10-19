@@ -1,9 +1,24 @@
 package Controller.Books.ReturnBooks;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import scene.SceneManager;
 
 public class returnBooksPageController {
+    public Button btnConformReturnBook;
+    public Button btnissueBookSearch;
+    public TextField txtIssueID;
+    public Label lblBarrowMember;
+    public Label lblBarrowBook;
+    public Label lblBarrowBookDate;
+    public Label lblissueBookDate;
+    public DatePicker dataOfReturn;
+
+    returnBookController returnBookController = new returnBookController();
+
     public void btnAddBookOnAction(ActionEvent actionEvent) {
         SceneManager.switchPage("/view/addBook.fxml");
     }
@@ -31,4 +46,35 @@ public class returnBooksPageController {
     public void btndashboardOnAction(ActionEvent actionEvent) {
         SceneManager.switchPage("/view/dashboard.fxml");
     }
+
+    public void btnHomeOnAction(ActionEvent actionEvent) {
+        SceneManager.switchPage("/view/dashboard.fxml");
+    }
+
+    public void btnConformReturnBookOnAction(ActionEvent actionEvent) {
+        returnBookController.databaseSaveReturnBooksDetails(dataOfReturn.getValue());
+    }
+
+    public void btnissueBookSearchOnAction(ActionEvent actionEvent) {
+        returnBookController.loadIssueBookDetailsByID(txtIssueID.getText());
+    }
+
+    public void setBarrowBook(String BarrowBook) {
+        lblBarrowBook.setText(BarrowBook);
+    }
+
+    public void setBarrowMember(String BarrowMember) {
+        lblBarrowBook.setText(BarrowMember);
+    }
+
+    public void setBarrowBookdate(String issueDate) {
+        lblBarrowBook.setText(issueDate);
+    }
+    public void setissueBookdate(String dueDate) {
+        lblBarrowBook.setText(dueDate);
+    }
+
+
+
+
 }
