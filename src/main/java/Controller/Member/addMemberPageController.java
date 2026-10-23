@@ -49,5 +49,6 @@ public class addMemberPageController {
     }
 
     public void btnBackToHomeOnAction(ActionEvent actionEvent) {
+        SceneManager.switchPage("/view/dashboard.fxml");
     }
 }

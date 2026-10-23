@@ -96,7 +96,7 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Label>
-      <Button layoutX="205.0" layoutY="390.0" mnemonicParsing="false" style="-fx-background-color: #8ECA3C;" text="Back to Home" textFill="WHITE" />
+      <Button fx:id="btnBackToHome" layoutX="205.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnBackToHomeOnAction" style="-fx-background-color: #8ECA3C;" text="Back to Home" textFill="WHITE" />
       <DatePicker fx:id="dateIssueBook" layoutX="219.0" layoutY="331.0" prefHeight="38.0" prefWidth="175.0" promptText="Select the Issue Date" />
       <DatePicker fx:id="dateDueDate" layoutX="513.0" layoutY="330.0" prefHeight="38.0" prefWidth="190.0" promptText="Select the Due Date" />
       <TextField fx:id="txtBarrowingMember" layoutX="354.0" layoutY="193.0" prefHeight="38.0" prefWidth="346.0" promptText="Select the member for Barrowing Books ( M001-Nimal Perera )" />
