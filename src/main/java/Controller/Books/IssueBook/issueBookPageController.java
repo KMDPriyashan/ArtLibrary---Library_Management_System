@@ -9,6 +9,7 @@ import scene.SceneManager;
 public class issueBookPageController {
 
 
+    public Button btnBackToHome;
     issueBookController issueBookController = new issueBookController();
     public TextField txtBarrowingID;
     public Button btnIssueBook;
@@ -47,5 +48,9 @@ public class issueBookPageController {
 
     public void btnSubmitIssueBookOnAction(ActionEvent actionEvent) {
         issueBookController.databaseSaveIssueBookDetails(txtBarrowingID.getText(),txtBarrowingBook.getText(),txtBarrowingMember.getText(),dateDueDate.getValue().toString(),dateIssueBook.getValue().toString());
+    }
+
+    public void btnBackToHomeOnAction(ActionEvent actionEvent) {
+        SceneManager.switchPage("/view/dashboard.fxml");
     }
 }
