@@ -16,6 +16,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class dashboardPageController implements Initializable {
+
+    dashboardController dashboardController = new dashboardController();
+    public Label lblTotalBookIssueCount;
+    public Label lblTotalMemberCount;
+    public Label lblTotalBooksCount;
+
     public Label lblAddBook;
     public Button btnAddBook;
     public Button btnAddmembers;
@@ -73,5 +79,16 @@ public class dashboardPageController implements Initializable {
         MemberTable.setItems(MemberList);
 
         new dashboardController().loadMemberDetails(MemberList);
+
+        int bookCount = dashboardController.changeDashboardBookCounts();
+        lblTotalBooksCount.setText(String.valueOf(bookCount));
+
+        int memberCount = dashboardController.changeDashboardMemberCounts();
+        lblTotalMemberCount.setText(String.valueOf(memberCount));
+
+        int isseBookCount = dashboardController.changeDashboardissueBookCounts();
+        lblTotalBookIssueCount.setText(String.valueOf(isseBookCount));
+
     }
+
 }
